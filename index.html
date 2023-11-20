@@ -4,8 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeTrix</title>
+    <link href="/assets/css/estilos-index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba541049fa.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    Hola
+    <header id="cabecera">
+        <section id="espacio-logo-cabecera">
+            <img id="logo-cabecera" src="assets/img/logo1-transformed.jpeg">
+        </section>
+        <section id="espacio-links-cabecera">
+            <span>
+                <a>SOBRE NOSOTROS</a>
+            </span>
+            <span>
+                <a>INICIA SESIÓN</a>
+            </span>
+        </section>
+    </header>
+    <div id="contenedor-principal">
+        <section id="img-banner">
+            <img id="img-banner-elemento" src="assets/img/programacionbanner.webp">
+        </section>
+        <section id="espacio-banner">
+            <section id="letras-banner">
+                <span>
+                    Unifica Diseño y Código: <br>
+                    Colaboración Web Sin <br>
+                    Fronteras
+                </span>
+            </section>
+            <section id="boton-banner">
+               <button id="boton-banner-elemento" type="button">Empieza Ahora</button>
+            </section>
+        </section>
+    </div>
+    <div id="contenedor-cards">
+        <section id="card-1" class="card-estilo">
+            <section id="espacio-icon-card-1">
+                <img id="web-coding" src="assets/img/icons/web-coding.png">
+            </section>
+            <section id="espacio-detalle-card-1">
+                <span class="titulo-detalle-card">
+                    Previsualización en tiempo real
+                </span>
+                <span class="descripcion-detalle-card">
+                    <center>Los usuarios pueden ver los cambios que hacen en el código de inmediato.</center>
+                </span>
+            </section>
+        </section>
+
+        <section id="card-2" class="card-estilo">
+            <section id="espacio-icon-card-2">
+                <img id="cloud" src="assets/img/icons/cloud.png">
+            </section>
+            <section id="espacio-detalle-card-2">
+                <span class="titulo-detalle-card">
+                    Trabaja de manera Offline
+                </span>
+                <span class="descripcion-detalle-card">
+                    <center>Todo lo que se trabaje de manera offline se quedará guardado.</center>
+                </span>
+            </section>
+        </section>
+
+        <section id="card-3" class="card-estilo">
+            <section id="espacio-icon-card-3">
+                <img id="community" src="assets/img/icons/community.png">
+            </section>
+            <section id="espacio-detalle-card-3">
+                <span class="titulo-detalle-card">
+                    Colaboración en tiempo real
+                </span>
+                <span class="descripcion-detalle-card">
+                    <center>Varias personas pueden trabajar simultáneamente en el mismo código, facilitando el desarrollo conjunto de proyectos web.</center>
+                </span>
+            </section>
+        </section>
+    </div>
+
+
+    <script src="assets/js/controladorIndex.js"></script>
 </body>
 </html>
