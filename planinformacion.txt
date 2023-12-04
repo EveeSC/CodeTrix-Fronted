@@ -1,0 +1,17 @@
+usuarios 
+    -Login 
+    -Registo 
+    -perfil
+    -plan
+
+-Login 
+
+
+
+Carpetas del usuario 
+    proyectos
+        archivos
+
+*compartir archivos y carpetas con otros usuarios
+
+
