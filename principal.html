@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Código</title>
+    <link rel="stylesheet" href="assets/css/estilo-principal.css">
+    <link rel="icon" href="/assets/img/logo1-transformed.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
+    <script src="https://kit.fontawesome.com/ba541049fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="contenedor-principal">
+        <div id="contenedor-iconos">
+            <section class="estilo-icono">
+                <i class="fa-solid fa-folder-plus"></i>
+            </section>
+            <section class="estilo-icono">
+                <i class="fa-solid fa-floppy-disk"></i>
+            </section>
+            <section class="estilo-icono">
+                <i class="fa-solid fa-download"></i>
+            </section>
+            <section class="estilo-icono">
+                <i class="fa-solid fa-share-nodes"></i>
+            </section>
+            <section class="estilo-icono">
+                <i class="fa-solid fa-folder-tree"></i>
+            </section>
+            <section class="estilo-icono"> 
+                <i class="fa-solid fa-user"></i>
+            </section>
+            <section class="estilo-icono">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </section>
+            <button class="boton-ejecutar-resultado" onclick="actualizarResultado()">Ejecutar</button>
+        </div>
+        <div id="contenedor-text-area">
+
+            <div id="espacio-html">
+                <label for="html">HTML:</label>
+                <textarea id="html" class="language-markup"></textarea>
+            </div>
+
+            <div id="espacio-css">
+                <label for="css">CSS:</label>
+                <textarea id="css" class="language-css"></textarea>
+            </div>
+
+            <div id="espacio-js">
+                <label for="js">JavaScript:</label>
+                <textarea id="js"class="language-js"></textarea>
+            </div>
+
+            <div id="espacio-iframe">
+                <label for="resultado">Resultado:</label>
+                <iframe id="resultado"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="assets/js/controladorPrincipal.js"></script>
+</body>
+</html>

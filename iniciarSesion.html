@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicia Sesión</title>
+    <link href="/assets/css/estilos-sesion.css" rel="stylesheet">
+    <link rel="icon" href="/assets/img/logo1-transformed.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba541049fa.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header id="cabecera">
+        <section id="espacio-logo-cabecera">
+            <img id="logo-cabecera" src="assets/img/logo1-transformed.jpeg">
+        </section>
+        <section id="espacio-links-cabecera">
+            <span>
+                <a onclick="volver()">HOME</a>
+            </span>
+            <span>
+                <a onclick="volverRegistro()">REGISTRARSE</a>
+            </span>
+        </section>
+    </header>
+
+    <div id="contenedor-principal">
+        <section id="cabecera-inputs">
+            <img id="logo-formulario" src="assets/img/logo1-transformed.jpeg">
+        </section>
+
+        <section id="espacio-inputs">
+            <input type="text" id="usuario-input" placeholder="Usuario">
+            <input type="text" id="contraseña-input" placeholder="Contraseña">
+        </section>
+
+        <section id="espacio-boton">
+            <button id="boton-formulario">Inicia Sesión</button>
+            <span>
+                <a id="link-input">
+                    Reestablecer Contraseña
+                </a>
+            </span>
+        </section>
+
+    </div>
+
+    <script src="assets/js/controladorSesion.js"></script>
+</body>
+</html>

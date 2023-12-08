@@ -1,0 +1,125 @@
+
+:root{
+    --colorbase : #3C308C;
+    --degradado: linear-gradient(to bottom, #B6D4FC 30%, #C2AFFE);
+    --colorinputs: #AEB9F2;
+
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background: var(--degradado);
+    height: 100%;
+}
+
+
+#contenedor-principal{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contenedor-iconos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+
+#contenedor-text-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 6px;
+    box-sizing: border-box;
+}
+
+textarea, iframe {
+  width: 660px;
+  height: 440px;
+  background-color: rgba(255, 255, 255, 0.621);
+  border-radius: 5px;
+  border: none;
+}
+
+textarea:focus{
+    border-color: #1D1459;
+}
+
+#resultado {
+  grid-column: span 2;
+}
+
+.fa-folder-plus, .fa-floppy-disk, .fa-download, .fa-share-nodes, .fa-folder-tree, .fa-user, .fa-right-from-bracket{
+    color:#1D1459;
+    font-size: 30px;
+}
+
+.estilo-icono{
+    background-color: rgba(255, 255, 255, 0.274);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 2px 4px 0px rgba(73, 72, 72, 0.5);
+}
+
+.estilo-icono:hover{
+    transform: translateY(2px);
+    box-shadow: 0 0 rgba(0, 0, 0, 0);
+    background-color: #666df2a5;
+}
+
+.boton-ejecutar-resultado {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    line-height: 1;
+    text-decoration: none;
+    color: #3c308c;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 112px;
+    height: 40px;
+    border: 3px solid #3c308c;
+    position: relative;
+    transition: 0.3s;
+    background-color: #ffffff00;
+}
+  
+.boton-ejecutar-resultado::before, .boton-ejecutar-resultado::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform-origin: 100% 50%;
+    height: 1.5px;
+    width: 11px;
+    background-color: #3c308c;
+    border-radius:3px;
+    will-change: transform;
+    transition: .3s;
+}
+  
+.boton-ejecutar-resultado::before {
+    transform: translateY(-50%) rotate(30deg);
+}
+  
+.boton-ejecutar-resultado::after {
+    transform: translateY(-50%) rotate(-30deg);
+}
+  
+.boton-ejecutar-resultado:hover::before {
+    transform: translate(5px, -50%) rotate(30deg);
+}
+  
+.boton-ejecutar-resultado:hover::after {
+    transform: translate(5px, -50%) rotate(-30deg);
+}
+
+.boton-ejecutar-resultado:hover{
+    cursor: pointer;
+}
+

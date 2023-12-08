@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link href="assets/css/estilos-registro.css" rel="stylesheet" >
+    <link rel="icon" href="/assets/img/logo1-transformed.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ba541049fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="cabecera">
+        <section id="espacio-logo-cabecera">
+            <img id="logo-cabecera" src="assets/img/logo1-transformed.jpeg">
+        </section>
+        <section id="espacio-links-cabecera">
+            <span>
+                <a onclick="volver()">HOME</a>
+            </span>
+            <span>
+                <a onclick="iniciarSesion()">INICIA SESIÓN</a>
+            </span>
+        </section>
+    </header>
+
+    <div id="contenedor-principal">
+        <section id="cabecera-inputs">
+            <span>
+                <center>¡Ingresa tus datos <br> para registrarte!</center>
+            </span>
+        </section>
+
+        <section id="espacio-inputs">
+            <input type="text" id="nombre-input" placeholder="Nombre Completo">
+            <input type="text" id="usuario-input" placeholder="Nombre de Usuario">
+            <input type="text" id="id-input" placeholder="ID">
+            <input type="text" id="correo-input" placeholder="Correo Electrónico">
+            <input type="date" id="fecha-input">
+            <input type="text" id="telefono-input" placeholder="Numero de Telefono">
+            <input type="text" id="contraseña-input" placeholder="Establecer Contraseña">
+        </section>
+
+        <section id="espacio-boton">
+            <button id="boton-formulario" onclick="planes()">Siguiente Paso</button>
+        </section>
+
+    </div>
+
+    <script src="assets/js/controladorRegistro.js"></script>
+</body>
+</html>

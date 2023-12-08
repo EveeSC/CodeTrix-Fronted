@@ -82,7 +82,7 @@ body, html {
 }
 
      
-#boton-banner-elemento{
+/* #boton-banner-elemento{
     background-color: #666DF2;
     border-radius: 10px;
     color: white;
@@ -90,12 +90,26 @@ body, html {
     border: none;
     font-size: medium;
     transition: background-color 0.3s ease;
+} */
+
+#boton-banner-elemento{
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    border: 1px solid var(--colorbase);
+    transition: 0.3s;
+    box-shadow: 0px 6px 0px -2px rgba(86, 67, 209, 1);
+    background-color: #666df2;
 }
 
 #boton-banner-elemento:hover{
-    background-color:#73C7FF;
-    font-weight: 200;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);;
+    box-shadow: 0 0 #fff;
+    transform: translateY(1px);
 }
 
 a:hover{
@@ -112,45 +126,45 @@ a:hover{
     /* align-items: center; */
 }
 
-     #web-coding, #cloud, #community{
-        height: 80px;
-     }
+#web-coding, #cloud, #community{
+    height: 80px;
+}
 
-     .card-estilo{
-        display: flex;
-        background-color: #f2f3fac8;
-        width: 400px;
-        height: 200px;
-        border-radius: 8px;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-        /* padding-top: 10px;
-        margin-right: 20px; */
-     }
+.card-estilo{
+    display: flex;
+    background-color: #f2f3fac8;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    /* padding-top: 10px;
+    margin-right: 20px; */
+}
 
-     #espacio-icon-card-1, #espacio-icon-card-2, #espacio-icon-card-3{
-        margin-top: 10px;
-     }
+#espacio-icon-card-1, #espacio-icon-card-2, #espacio-icon-card-3{
+    margin-top: 10px;
+}
      
-     #espacio-detalle-card-1,#espacio-detalle-card-2,#espacio-detalle-card-3{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 40px;
-        row-gap: 10px;
-     }
+#espacio-detalle-card-1,#espacio-detalle-card-2,#espacio-detalle-card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 40px;
+    row-gap: 10px;
+}
 
-     .titulo-detalle-card{
-        font-size: 18px;
-        font-weight:600;
-     }
+.titulo-detalle-card{
+    font-size: 18px;
+    font-weight:600;
+}
 
-     .descripcion-detalle-card{
-        font-size: 14px;
-        font-weight: lighter;
-     }
+.descripcion-detalle-card{
+    font-size: 14px;
+    font-weight: lighter;
+}
 
 @media (max-width: 1286px) {
     #cabecera{
@@ -224,12 +238,23 @@ a:hover{
     }
          
     #boton-banner-elemento{
-        background-color: #666DF2;
-        border-radius: 10px;
-        color: white;
-        padding: 10px 35px;
-        border: none;
-        font-size: medium;
+        line-height: 1;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 20px;
+        width: 200px;
+        height: 40px;
+        font-weight: bold;
+        border: 1px solid var(--colorbase);
+        transition: 0.3s;
+        box-shadow: 0px 6px 0px -2px rgba(86, 67, 209, 1);
+        background-color: #666df2;
+    }
+    
+    #boton-banner-elemento:hover{
+        box-shadow: 0 0 #fff;
+        transform: translateY(1px);
     }
          
     #contenedor-cards{
@@ -357,12 +382,23 @@ a:hover{
     }
          
     #boton-banner-elemento{
-        background-color: #666DF2;
-        border-radius: 10px;
-        color: white;
-        padding: 10px 35px;
-        border: none;
-        font-size: medium;
+        line-height: 1;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 20px;
+        width: 200px;
+        height: 40px;
+        font-weight: bold;
+        border: 1px solid var(--colorbase);
+        transition: 0.3s;
+        box-shadow: 0px 6px 0px -2px rgba(86, 67, 209, 1);
+        background-color: #666df2;
+    }
+    
+    #boton-banner-elemento:hover{
+        box-shadow: 0 0 #fff;
+        transform: translateY(1px);
     }
          
     #contenedor-cards{
