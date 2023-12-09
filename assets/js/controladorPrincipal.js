@@ -1,3 +1,5 @@
+const usuario = JSON.parse(localStorage.getItem('usuario'));
+console.log(usuario);
 function actualizarResultado() {
     const codigoHTML = document.getElementById('html').value;
     const codigoCSS = document.getElementById('css').value;
